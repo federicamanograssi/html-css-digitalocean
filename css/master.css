@@ -1,0 +1,88 @@
+/* ---DEBUG--- */
+.debug .container,
+.debug .container-fluid,
+.debug-noheight .container,
+.debug-noheight .container-fluid  {
+    background-color: lightblue;
+    border: 1px solid red;
+    height: 200px;
+}
+.debug [class*='col-'] {
+    background-color: yellow;
+    border:1px solid blue;
+    height: 200px;
+}
+
+.debug-noheight [class*='col-'] {
+    border:1px solid blue;
+    background-color: yellow;
+}
+/* ---DA CANCELLARE --- */
+header,
+#jumbotron,
+#sezione_loghi,
+#sezione_des4dev,
+#sezione_regioni,
+#sezione_testimonials,
+#sezione_cta,
+footer {
+    background-color: grey;
+}
+
+
+/* ---------------------- STYLE ---------------------- */
+
+
+
+
+/* -- UTILITIES -- */
+
+.ms_wrapped {
+    width: 750px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- DESKTOP ---------- */
+
+@media all and (min-width:992px){
+
+    /* --- UTILITIES --- */
+.ms_wrapped {
+    width: 970px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+    
+}
+
+
+
+/* ---------- XL ---------- */
+
+@media all and (min-width:1200px){
+
+    /* --- UTILITIES --- */
+.ms_wrapped {
+    width: 1170px;
+    margin: 0 auto;
+}
+    
+}
+
+
+
+
