@@ -5,12 +5,15 @@
 .debug-noheight .container-fluid  {
     background-color: lightblue;
     border: 1px solid red;
-    height: 200px;
 }
 .debug [class*='col-'] {
     background-color: yellow;
     border:1px solid blue;
     height: 200px;
+}
+.debug section,
+.debug-noheight section {
+    border: 2px solid green;
 }
 
 .debug-noheight [class*='col-'] {
@@ -38,7 +41,7 @@ footer {
 /* -- UTILITIES -- */
 
 .ms_wrapped {
-    width: 750px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -54,6 +57,20 @@ footer {
 
 
 
+
+
+/* ---------- TABLET ---------- */
+
+@media all and (min-width:768PX){
+
+    /* --- UTILITIES --- */
+.ms_wrapped {
+    width: 750px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+    
+}
 
 
 /* ---------- DESKTOP ---------- */
