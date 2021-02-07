@@ -5,6 +5,7 @@
 .debug-noheight .container-fluid  {
     background-color: lightblue;
     border: 1px solid red;
+    color:black
 }
 .debug [class*='col-'] {
     background-color: yellow;
@@ -21,7 +22,7 @@
     background-color: yellow;
 }
 /* ---DA CANCELLARE --- */
-header,
+/* header,
 #jumbotron,
 #sezione_loghi,
 #sezione_des4dev,
@@ -30,20 +31,115 @@ header,
 #sezione_cta,
 footer {
     background-color: grey;
-}
+} */
 
 
 /* ---------------------- STYLE ---------------------- */
 
-
-
+/* --PALETTE COLOR-- */
+.bg_white {
+    background-color: white;
+}
+.bg_lightgrey {
+    background-color: rgb(243, 245, 249);
+}
+.bg_darkblue {
+    background-color: hsl(220,95%,8%);
+}
+.bg_primaryblue {
+    background-color: #004aff;
+}
+.bg_gradient_blue{
+    background: linear-gradient(0deg, rgba(0,30,154,1) 0%, rgba(0,71,197,1) 100%);;
+}
 
 /* -- UTILITIES -- */
 
 .ms_wrapped {
     width: 100%;
-    margin: 0 auto;
 }
+.ms_padding_top {
+    padding-top: 20px;
+}
+.ms_padding_bottom {
+    padding-bottom: 20px;
+}
+
+.ms_menu_inline {
+    list-style: none;
+    margin-bottom: 0;
+}
+.ms_menu_inline li{
+    display: inline;
+}
+
+
+    /* --HEADER-- */
+header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.ms_navbar {
+    margin-bottom: 0px;
+}
+#toggle_menu {
+    color: #004aff;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+.navbar img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+header .ms_menu_inline li {
+    padding: 5px;
+    text-transform: capitalize;
+}
+header .ms_menu_inline li:first-child {
+    padding-left: 0;
+}
+header .ms_menu_inline li:last-child {
+    padding-right: 0;
+}
+
+#ms_signup {
+    border: 1px solid #004aff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+    /* -- MAIN -- */
+main {
+    margin-top: 50px;
+}
+
+#sezione_loghi img{
+    max-width: 100%;
+}
+
+#sezione_des4dev img {
+    max-width: 100%;
+}
+
+    /* --FOOTER-- */
+footer {
+    color: hsla(0,0%,100%,0.5);
+}
+
+
+
+
+
+
+
 
 
 
