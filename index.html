@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/master.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/master.css">
     <title>Digital Ocean</title>
 </head>
 
@@ -57,18 +59,33 @@
     <main>
 
         <!-- --SEZIONE JUMBOTRON -- -->
-        <section id="jumbotron" class="bg_primaryblue ms_padding_top ms_padding_bottom">
+        <section id="jumbotron" class="bg_primaryblue ms_padding_top_40 ms_padding_bottom_40">
             <div class="ms_wrapped">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <h1>The simplest cloud platform for developers & teams</h1>
-                            <p>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.</p>
+                        <div class="col-xs-12 col-sm-7 ms_column_padding_right">
+                            <h1 class="ms_font_white">The simplest cloud platform for developers & teams</h1>
+                            <p class="ms_font_white">Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <div>
-                                <h2>Deploy your app in seconds. Get started now.</h2>
-                                <form action=""></form>
+                        <div class="col-xs-12 col-sm-5 ms_column_padding_top">
+                            <div class="ms_signin_box bg_white ">
+                                <h2 class="text-center">Deploy your app in seconds.<br>
+                                <span class="ms_font_primaryblue">Get started now.</span> 
+                                </h2>
+                                <form action="" class="ms_create_account_form">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-block btn-primary bg_primaryblue">Create your account</button>
+                                </form>
+                                <a class="btn ms_google_login btn-block clearfix" role="button">
+                                    <img src="img/logo_google_icon.svg" alt=""> 
+                                    <strong>Sign up with Google</strong>
+                                </a>
+                                <div class="caption text-center">By signing up you agree to the <a href="" class="ms_text_underline">Terms of Service</a></div>
                             </div>
                         </div>
                     </div>
@@ -77,7 +94,7 @@
         </section>
 
         <!-- -- SEZIONE LOGHI -- -->
-        <section id="sezione_loghi" class="bg_lightgrey text-center ms_padding_top ms_padding_bottom">
+        <section id="sezione_loghi" class="bg_lightgrey text-center ms_padding_top_40 ms_padding_bottom_40">
             <div class="ms_wrapped">
                 <div class="container-fluid">
                     <div class="row">

@@ -36,7 +36,30 @@ footer {
 
 /* ---------------------- STYLE ---------------------- */
 
+/* -- TIPOGRAFIA-- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(3, 27,78);
+}
+p {
+    font-family: 'Inter', sans-serif;
+    color: rgb(91, 105, 135);
+}
+p:last-child {
+    margin-bottom: 0;
+}
 /* --PALETTE COLOR-- */
+.ms_font_white{
+    color: white;    
+}
+.ms_font_primaryblue {
+    color: #004aff;
+}
 .bg_white {
     background-color: white;
 }
@@ -48,22 +71,55 @@ footer {
 }
 .bg_primaryblue {
     background-color: #004aff;
+    border-color:#004aff ;
 }
 .bg_gradient_blue{
     background: linear-gradient(0deg, rgba(0,30,154,1) 0%, rgba(0,71,197,1) 100%);;
 }
 
+
+/* --BUTTONS-- */
+.ms_google_login {
+    background-color: white;
+    color: grey;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 2px grey;
+    position: relative;
+    vertical-align: middle;
+    margin:10px auto;
+}
+.ms_google_login img {
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
 /* -- UTILITIES -- */
 
 .ms_wrapped {
     width: 100%;
 }
-.ms_padding_top {
+.ms_column_padding_right {
+    padding-right: 40px;
+}
+.ms_padding_top_40 {
+    padding-top: 40px;
+}
+.ms_padding_bottom_40 {
+    padding-bottom: 40px;
+}
+.ms_padding_top_20 {
     padding-top: 20px;
 }
-.ms_padding_bottom {
+.ms_padding_bottom_20 {
     padding-bottom: 20px;
 }
+.ms_column_padding_top {
+    padding-top: 20px;
+}
+
 
 .ms_menu_inline {
     list-style: none;
@@ -71,6 +127,21 @@ footer {
 }
 .ms_menu_inline li{
     display: inline;
+}
+
+.ms_signin_box {
+    padding:010px 20px 20px;
+    border-radius: 5px;
+}
+a {
+    color:#004aff;
+}
+a.ms_text_underline {
+    text-decoration: underline;
+}
+
+.caption {
+    font-size: 0.7em;
 }
 
 
@@ -111,7 +182,7 @@ header .ms_menu_inline li:last-child {
 }
 
 #ms_signup {
-    border: 1px solid #004aff;
+    border: 1px solid #337ab7;
     padding: 5px;
     border-radius: 5px;
 }
@@ -119,6 +190,19 @@ header .ms_menu_inline li:last-child {
     /* -- MAIN -- */
 main {
     margin-top: 50px;
+}
+
+ /* --JUMBOTRON-- */
+#jumbotron {
+    background-image: url('../img/bg_jumbotron.svg');
+    background-size: cover;
+    background-position: bottom;
+}
+#jumbotron h1 {
+    font-size: 2.6em;
+}
+#jumbotron p {
+    font-size: 1.2em;
 }
 
 #sezione_loghi img{
@@ -164,6 +248,17 @@ footer {
     width: 750px;
     max-width: 1170px;
     margin: 0 auto;
+}
+.ms_column_padding_top {
+    padding-top: 0px;
+}
+
+    /* --MAIN-- */
+#jumbotron h1 {
+    font-size: 3.8em;
+}
+#jumbotron p {
+    font-size: 1.3em;
 }
     
 }
