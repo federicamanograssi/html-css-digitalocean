@@ -142,7 +142,7 @@ p {
     padding-bottom: 20px;
 }
 .ms_column_padding_top {
-    padding-top: 20px;
+    padding-top: 30px;
 }
 .ms_margin_top_40 {
     margin-top: 40px;
@@ -152,14 +152,21 @@ p {
 }
 
 /* ------------------------------------------------------------------- */
-.fake_icon {
-    width: 10px;
-    ;
-}
+
 /* --COMMON-- */
 
 .ms_inline {
     display: inline;
+}
+a {
+    color:#004aff;
+}
+a:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
+a.ms_text_underline {
+    text-decoration: underline;
 }
 /* --MENU UL SETTING-- */
 
@@ -194,12 +201,7 @@ p {
     padding:010px 20px 20px;
     border-radius: 5px;
 }
-a {
-    color:#004aff;
-}
-a.ms_text_underline {
-    text-decoration: underline;
-}
+
 
 .caption {
     font-size: 0.7em;
@@ -326,17 +328,24 @@ main {
 #sezione_des4dev .ms_font_darkblue.opacity {
     opacity: 50%;
 }
-#sezione_des4dev ul {
-    list-style-type: disc;
-    color: blue;
-    font-size: 2em;
+
+    /* --REGION-- */
+.ms_region_data_row {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-
-#sezione_des4dev ul li:first-child{
-    color: red;
+.ms_region_data_row div:first-child {
+    text-transform: uppercase;
 }
-
-
+.ms_region_data_row div:last-child {
+    text-align: right;
+}
+.ms_region_data_row a{
+    color: rgb(0, 215, 210);
+}
 
     /* --FOOTER-- */
 
@@ -433,8 +442,7 @@ footer {
     width: 970px;
     max-width: 1170px;
     margin: 0 auto;
-}
-    
+} 
 }
 
 
