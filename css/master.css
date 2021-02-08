@@ -21,17 +21,13 @@
     border:1px solid blue;
     background-color: yellow;
 }
-/* ---DA CANCELLARE --- */
-/* header,
-#jumbotron,
-#sezione_loghi,
-#sezione_des4dev,
-#sezione_regioni,
-#sezione_testimonials,
-#sezione_cta,
-footer {
-    background-color: grey;
-} */
+/* ---DA FIXARE ---
+
+TIPOGRAFIA:parti dal basso
+LOGHI: centratura loghi
+NAVBAR:md bp, login btn
+ */
+
 
 
 /* ---------------------- STYLE ---------------------- */
@@ -215,6 +211,7 @@ a.ms_text_underline {
 }
 
 .ms_testimonial_box {
+    min-height: 300px;
     padding: 40px 10px;
     border-radius: 5px;
     background-color: white;
@@ -333,6 +330,8 @@ main {
     opacity: 50%;
 }
 
+
+
     /* --REGION-- */
 .ms_region_data_row {
     margin-right: 5px;
@@ -350,6 +349,10 @@ main {
 .ms_region_data_row a{
     color: rgb(0, 215, 210);
 }
+
+
+
+
 
     /* --FOOTER-- */
 footer .ms_social_menu {
@@ -378,7 +381,42 @@ footer a {
 }
 
 
+/* --FIXED HELPER */
+#helper {
+    background-color: transparent;
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+}
+#helper img {
+    width: 100px;
+    height: 100px;
+}
+.bubble {
+    position: relative;
+    padding: 10px 5px;
+    background: #FFFFFF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    }
 
+.bubble:after {
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 0 15px 15px;
+border-color: transparent #FFFFFF;
+display: block;
+width: 0;
+z-index: 1;
+right: -15px;
+top: 75px;
+}
+
+.bubble p {
+margin: 0;
+}
 
 
 
@@ -431,6 +469,27 @@ footer a {
     padding: 0 10px;
     }
 
+    /* --TESTIMONIALS-- */
+.ms_testimonial_chevron {
+    min-height: 300px;
+    position: relative;
+}
+.ms_testimonial_chevron i {
+    font-size: 3em;
+    
+}
+.ms_testimonial_chevron.left i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+.ms_testimonial_chevron.right i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
 }
 
 
