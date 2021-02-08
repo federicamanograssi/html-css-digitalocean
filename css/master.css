@@ -50,9 +50,9 @@ p {
     font-family: 'Inter', sans-serif;
     color: rgb(91, 105, 135);
 }
-p:last-child {
+/* p:last-child {
     margin-bottom: 0;
-}
+} */
 /* --PALETTE COLOR-- */
 .ms_font_white{
     color: white;    
@@ -119,14 +119,35 @@ p:last-child {
 .ms_column_padding_top {
     padding-top: 20px;
 }
+.ms_margin_top_40 {
+    margin-top: 40px;
+}
+.ms_margin_bottom_40 {
+    margin-bottom: 40px;
+}
 
 
-.ms_menu_inline {
+.ms_menu_inline_none{
     list-style: none;
     margin-bottom: 0;
 }
 .ms_menu_inline li{
     display: inline;
+}
+
+.ms_tab_menu {
+    padding-left: 0;
+    list-style-type: none ;
+}
+.ms_tab_menu li{
+    padding: 10px;
+    border-left:1px solid rgb(91, 105, 135);
+}
+.ms_tab_menu li:hover {
+    border-left: 3px solid #004aff;
+}
+.ms_tab_menu a{
+    color: rgb(91, 105, 135);
 }
 
 .ms_signin_box {
@@ -205,14 +226,30 @@ main {
     font-size: 1.2em;
 }
 
+    /* --LOGHI-- */
 #sezione_loghi img{
     max-width: 100%;
 }
 
+    /* --DES4DEV-- */
 #sezione_des4dev img {
     max-width: 100%;
 }
 
+
+
+    /* -- DEPLOY-- */
+#sezione_deploy h3+p {
+    font-size: 0.9em;
+}
+
+
+/* --DES4DEV-- */
+#sezione_des4dev img {
+    max-width: 80%;
+ 
+}
+}
     /* --FOOTER-- */
 footer {
     color: hsla(0,0%,100%,0.5);
@@ -244,6 +281,7 @@ footer {
 @media all and (min-width:768PX){
 
     /* --- UTILITIES --- */
+
 .ms_wrapped {
     width: 750px;
     max-width: 1170px;
@@ -253,20 +291,44 @@ footer {
     padding-top: 0px;
 }
 
+.ms_tab_menu {
+    padding-left: initial;
+    position: relative;
+    left: 25%;
+}
+
     /* --MAIN-- */
 #jumbotron h1 {
-    font-size: 3.8em;
+    font-size: 2em;
+}
+#jumbotron h2 {
+    font-size: 1.4em;
 }
 #jumbotron p {
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
-    
+
 }
 
 
 /* ---------- DESKTOP ---------- */
 
 @media all and (min-width:992px){
+
+        /* --MAIN-- */
+#jumbotron h1 {
+    font-size: 3.8em;
+}
+#jumbotron h2 {
+    font-size: 2em;
+}
+#jumbotron p {
+    font-size: 1.6em;
+}
+
+#sezione_deploy h3+p {
+    font-size: 0.8em;
+}
 
     /* --- UTILITIES --- */
 .ms_wrapped {

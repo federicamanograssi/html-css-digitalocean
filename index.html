@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/master.css">
     <title>Digital Ocean</title>
 </head>
 
-<body class="">
+<body class="debug-noheight">
 
         <!-- --- HEADER--- -->
     <header class="bg_white">
@@ -27,7 +28,7 @@
                     <button type="button" id="toggle_menu" class="navbar-toggle collapsed"><i class="fas fa-bars"></i></button>
                     <div class="row navbar-collapse collapse">
                         <div class="col-md-7 text-left">
-                          <ul class="ms_menu_inline">
+                          <ul class="ms_menu_inline ms_menu_inline_none">
                             <li class="dropdown">
                                 <a href="#">
                                     products <span class="caret"></span>
@@ -39,7 +40,7 @@
                           </ul>
                         </div>
                         <div class="col-md-5">
-                          <ul class="ms_menu_inline text-right">
+                          <ul class="ms_menu_inline ms_menu_inline_none text-right">
                             <li><a href="#">docs</a></li>
                             <li class="dropdown">
                                 <a href="">support <span class="caret"></a>
@@ -98,9 +99,11 @@
             <div class="ms_wrapped">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-xs-12"> innovative business trust digitalocean</div>
+                        <div class="col-xs-12"> 
+                           <p class="text-uppercase">innovative business trust digitalocean</p>
+                        </div>
                     </div>
-                    <div class="row">
+                    <div class="row ms_padding_top_20 ms_padding_bottom_20">
                         <div class="col-xs-6 col-sm-2">
                             <img class="logos" src="img/logo_docker.svg" alt="Logo Docker">
                         </div>
@@ -121,14 +124,16 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12"><a href="#">View customer stories &nbsp;></a></div>
+                        <div class="col-xs-12 ms_padding_top_20">
+                            <a href="#">View customer stories &nbsp;></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- -- SEZIONE DEPLOY -- -->
-        <section id="sezione_deploy">
+        <section id="sezione_deploy" class="ms_padding_top_40 ms_padding_bottom_40">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 text-center">
@@ -136,11 +141,17 @@
                         <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row ms_padding_bottom_20 ms_padding_top_20">
                     <div class="col-xs-12 col-sm-4">
-                        <ul></ul>
+                        <ul class="ms_tab_menu">
+                            <li><a href="">Deploy</a></li>
+                            <li><a href="">Manage</a></li>
+                            <li><a href="">Secure</a></li>
+                            <li><a href="">Scale</a></li>
+                            <li><a href="">Monitor</a></li>
+                        </ul>
                     </div>
-                    <div class="col-xs-12 col-sm-8">
+                    <div class="col-xs-12 col-sm-8 ms_column_padding_top">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6">
                                 <div class="ms_deploy_block">
@@ -157,7 +168,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row ms_padding_top_20">
                             <div class="col-xs-12 col-sm-6">
                                 <div class="ms_deploy_block">
                                     <img src="img/one-click.svg" alt="One-click Apps">
@@ -179,27 +190,24 @@
         </section>
 
         <!-- -- SEZIONE DES4DEV -- -->
-        <section id="sezione_des4dev" class="bg_lightgrey">
+        <section id="sezione_des4dev" class="bg_lightgrey ms_padding_bottom_40 ms_padding_top_40">
             <div class="ms_wrapped">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-xs-12">
+                        <div class="col-xs-12 text-center">
                             <h2>Designed for developers</h2>
                             <p>Build more and spend less time managing your ingrastructure with our easy-to-use control panel and API.</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <img src="img/screenshot-createdroplet.jpg" alt="">
-                            <p>Create compute servers in 55 seconds or less.</p>
+                    <div class="row ms_padding_top_20">
+                        <div class="col-xs-12 text-center">
+                            <i class="fas fa-angle-left"></i>
+                            <img id="fake_slider" src="img/screenshot-createdroplet.jpg" alt="">
+                            <i class="fas fa-angle-right"></i>
+                            <h4>Create compute servers in 55 seconds or less.</h4>
                         </div>
                         <div class="col-xs-12">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+                          pallini slider
                         </div>
                     </div>
                 </div>
