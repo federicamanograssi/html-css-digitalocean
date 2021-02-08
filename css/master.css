@@ -244,6 +244,12 @@ header {
     left: 0;
     z-index: 999;
 }
+header a {
+    color: hsl(220,95%,8%)
+}
+header a:hover {
+    color:#004aff;
+}
 
 .ms_navbar {
     margin-bottom: 0px;
@@ -271,8 +277,8 @@ header .ms_menu_inline li:last-child {
 }
 
 #ms_signup {
-    border: 1px solid #337ab7;
-    padding: 5px;
+    border: 1px solid #004aff;
+    padding:10px;
     border-radius: 5px;
 }
 
@@ -305,6 +311,7 @@ main {
     /* --LOGHI-- */
 
 #sezione_loghi img{
+    min-height: 80px;
     max-width: 100%;
 }
 
