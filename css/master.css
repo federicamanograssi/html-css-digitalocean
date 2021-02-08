@@ -65,6 +65,9 @@ p {
 .ms_font_darkblue {
     color: hsl(220,95%,8%);
 }
+.ms_font_grey{
+    color: rgb(91, 105, 135);
+}
 .bg_white {
     background-color: white;
 }
@@ -126,9 +129,7 @@ p {
 .ms_wrapped {
     width: 100%;
 }
-.ms_column_padding_right {
-    padding-right: 40px;
-}
+
 .ms_padding_top_40 {
     padding-top: 40px;
 }
@@ -143,6 +144,9 @@ p {
 }
 .ms_column_padding_top {
     padding-top: 30px;
+}
+.ms_column_padding_right {
+    padding-right: 40px;
 }
 .ms_margin_top_40 {
     margin-top: 40px;
@@ -348,15 +352,30 @@ main {
 }
 
     /* --FOOTER-- */
-
-footer {
-    color: hsla(0,0%,100%,0.5);
+footer .ms_social_menu {
+    padding-inline-start: 0;
 }
 
+footer .ms_social_menu li:not(:last-child) {
+    padding-right:10px;
+}
+footer a {
+    color: inherit;
+}
 
-
-
-
+.ms_footer_ul_navigation {
+    list-style: none;
+    padding-inline-start: 0;
+}
+.ms_footer_ul_navigation li{
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+.ms_footer_ul_navigation li:first-child{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
 
 
 
