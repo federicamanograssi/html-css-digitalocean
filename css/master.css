@@ -30,7 +30,9 @@ NAVBAR:login btn
 
 
 /* ---------------------- STYLE ---------------------- */
-
+body {
+    font-size: 16px;
+}
 /* -- TIPOGRAFIA-- */
 h1,
 h2,
@@ -41,7 +43,7 @@ h6 {
     font-family: 'Roboto', sans-serif;
     color: rgb(3, 27,78);
 }
-p {
+p, span {
     font-family: 'Inter', sans-serif;
     color: rgb(91, 105, 135);
 }
@@ -85,6 +87,14 @@ p {
 
 
 /* --BUTTONS-- */
+.ms_btn_white {
+    
+    border: 1px solid #004aff;
+    padding:5px 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
 .ms_google_login {
     background-color: white;
     color: grey;
@@ -137,9 +147,11 @@ p {
 .ms_padding_bottom_20 {
     padding-bottom: 20px;
 }
+
 .ms_column_padding_top {
     padding-top: 30px;
-}
+}    /* <--per distanziare le colonne da cellulare */
+
 .ms_column_padding_right {
     padding-right: 40px;
 }
@@ -153,28 +165,30 @@ p {
 /* ------------------------------------------------------------------- */
 
 /* --COMMON-- */
-
-.ms_inline {
-    display: inline;
-}
-a {
+a,
+button {
     color:#004aff;
 }
 a:hover{
     text-decoration: none;
-    opacity: 0.8;
+    opacity: 1;   
 }
-a.ms_text_underline {
+
+.ms_text_underline {
     text-decoration: underline;
 }
+
+.caption {
+    font-size: 0.7em;
+}
+
+
+
 /* --MENU UL SETTING-- */
 
-.ms_menu_inline_none{
-    list-style: none;
-    margin-bottom: 0;
-}
 .ms_menu_inline li{
     display: inline;
+    margin-bottom: 0;
 }
 
 .ms_tab_menu {
@@ -186,29 +200,25 @@ a.ms_text_underline {
     border-left:1px solid rgb(91, 105, 135);
 }
 .ms_tab_menu li:hover {
-    border-left: 3px solid #004aff;
+    border-left: 3px solid #004aff;   
 }
 .ms_tab_menu a{
     color: rgb(91, 105, 135);
 }
-
-
-
-/* --BOX-- */
-
-.ms_signin_box {
-    padding:010px 20px 20px;
-    border-radius: 5px;
+.ms_tab_menu li:hover a{
+    color: #004aff;
 }
 
 
-.caption {
-    font-size: 0.7em;
-}
+
+/* -----------------------BOX------------------------------ */
+
+
+
 .fake_slider img {
     max-width: 100%;
 }
-
+ /* --TESTIMONIAL BOX-- */
 .ms_testimonial_box {
     min-height: 300px;
     padding: 40px 10px;
@@ -242,6 +252,7 @@ header {
     top: 0;
     left: 0;
     z-index: 999;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
 header a {
     color: hsl(220,95%,8%)
@@ -259,9 +270,8 @@ header a:hover {
     margin-bottom: 0;
     padding: 0;
 }
-.navbar img{
+.navbar img {
     display: block;
-    max-width: 100%;
     max-height: 100%;
 }
 header .ms_menu_inline li {
@@ -275,11 +285,6 @@ header .ms_menu_inline li:last-child {
     padding-right: 0;
 }
 
-#ms_signup {
-    border: 1px solid #004aff;
-    padding:10px;
-    border-radius: 5px;
-}
 
 
 
@@ -303,6 +308,10 @@ main {
 }
 #jumbotron p {
     font-size: 1.2em;
+}
+.ms_signin_box {
+    padding:010px 20px 20px;
+    border-radius: 5px;
 }
 
 
@@ -345,6 +354,7 @@ main {
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 0.75em;
 }
 .ms_region_data_row div:first-child {
     text-transform: uppercase;
@@ -363,13 +373,18 @@ main {
     /* --FOOTER-- */
 footer .ms_social_menu {
     padding-inline-start: 0;
+    font-size: 1.5em;
 }
 
 footer .ms_social_menu li:not(:last-child) {
     padding-right:10px;
+    
 }
 footer a {
     color: inherit;
+}
+footer a:hover {
+    color: white;
 }
 
 .ms_footer_ul_navigation {
@@ -507,6 +522,9 @@ margin: 0;
 @media all and (min-width:992px){
 
         /* --MAIN-- */
+header {
+    font-size: 0.9em;
+}
 #jumbotron h1 {
     font-size: 3.8em;
 }
